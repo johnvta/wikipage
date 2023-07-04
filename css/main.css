@@ -1,0 +1,162 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(24, 22, 22);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #708090;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #191970;
+  color: white;
+}
+
+/* Hide the icon that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style for page content */
+.content {
+  padding: 14px;
+  font-size: 22px;
+  background-color: #F5F5F5;
+}
+
+/* When the screen is less than 800 pixels wide */
+@media screen and (max-width: 800px) {
+  /* Hide all links, except for the selected tab */
+  .topnav a:not(.active) {
+    display: none;
+  }
+
+  /* Show the icon that should open and close the topnav */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* When the screen is less than 800 pixels wide, if the user clicks on the icon */
+/* the "responsive" class attribute will be added to the topnav by the JavaScript code */
+/* This media query sets the style for the unfolded topnav */
+/* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.card {
+  display: inline-block;
+  width: 45%;
+  margin-left: 44px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover, .cardtwo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.card-containertwo {
+  display: flex;
+}
+
+.cardtwo {
+  flex: 1;
+  margin: 10px;
+}
+
+.card-containerthree {
+  display: flex;
+}
+
+.cardthree {
+  flex: 1;
+  margin: 10px;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+
+
+
+
+
+
+
